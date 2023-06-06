@@ -60,10 +60,10 @@ while($row = mysqli_fetch_assoc($datainsert)){
     <td><?php echo $row["email"]; ?></td>
     <td><?php echo $row["password"]; ?></td>
     <td><img src="<?php echo $row['img']; ?>" width="100px"></td>
-
+    <td>
+      <a class="text-dart" href="delete.php?dlt=<?php echo $row["id"];?>">Delete</a>
+    </td>
 </tr>
-
-
 <?php
 }
 ?>
